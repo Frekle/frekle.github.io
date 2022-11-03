@@ -4,15 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>Frekle&#39;s Blog</title>
+  <title>搭建Sonarqube | Frekle&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Frekle&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="mac Sonarqube搭建教程背景通过Jenkins服务，可实现脚本自动化。我们利用这个原理，来完成打包后扫描代码的工作。 本地端工作原理 xcodebuild打包后生成xcodebuild.log文件。 使用xcpretty将xcodebuild.log文件导出为compile_commands.json格式。 使用infer来将扫描代码质量，并生成报告 使用sonar-swift插件完成s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建Sonarqube">
+<meta property="og:url" content="http://example.com/2022/11/03/Sonarqube/index.html">
 <meta property="og:site_name" content="Frekle&#39;s Blog">
+<meta property="og:description" content="mac Sonarqube搭建教程背景通过Jenkins服务，可实现脚本自动化。我们利用这个原理，来完成打包后扫描代码的工作。 本地端工作原理 xcodebuild打包后生成xcodebuild.log文件。 使用xcpretty将xcodebuild.log文件导出为compile_commands.json格式。 使用infer来将扫描代码质量，并生成报告 使用sonar-swift插件完成s">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/35312306-c4c843fe-00f5-11e8-94f7-6f8bd3f1b8e5.png">
+<meta property="article:published_time" content="2022-11-03T08:58:01.000Z">
+<meta property="article:modified_time" content="2022-11-03T08:58:25.085Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/35312306-c4c843fe-00f5-11e8-94f7-6f8bd3f1b8e5.png">
   
     <link rel="alternate" href="/atom.xml" title="Frekle's Blog" type="application/atom+xml">
   
@@ -69,9 +75,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Sonarqube" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Sonarqube" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/11/03/Sonarqube/" class="article-date">
   <time class="dt-published" datetime="2022-11-03T08:58:01.000Z" itemprop="datePublished">2022-11-03</time>
@@ -84,8 +88,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/03/Sonarqube/">搭建Sonarqube</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      搭建Sonarqube
     </h1>
   
 
@@ -166,11 +170,9 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
   
+</article>
 
 
 </section>
