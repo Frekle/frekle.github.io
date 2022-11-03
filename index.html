@@ -129,7 +129,7 @@
 在终端输入  <code>infer --version</code>，验证是否安装成功。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Frekle:~ Frekle$ infer --version</span><br><span class="line">Infer version v1.1.0</span><br><span class="line">Copyright 2009 - present Facebook. All Rights Reserved.</span><br><span class="line">Frekle:~ Frekle$ </span><br></pre></td></tr></table></figure>
 <code>Infer</code>与<code>OCLint</code>一样，都是分析<code>compile_commands.json</code>文件。在<code>compile_commands.json</code>文件相同路径下执行命令：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># --skip-analysis-in-path 是忽略扫描目录</span><br><span class="line"># --no-liveness </span><br><span class="line">$ infer run --skip-analysis-in-path Pods --keep-going --compilation-database compile_commands.json  </span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>注意：命令中一定要有<code>--keep-going</code> 不然会有错误导致无法进行分析。<br>另外需要在xcodebuild命令中添加<code>OTHER_CFLAGS=&quot;-DNS_FORMAT_ARGUMENT(A)= -D_Nullable_result=_Nullable&quot;</code>。<br>通过 <code>--no-liveness</code> 命令会让infer过滤掉<code>dead store</code>的错误，就是这些错误<br>![4908b1c0020d110b8427b6917127a087](mac Sonarqube搭建文档.resources&#x2F;35312306-c4c843fe-00f5-11e8-94f7-6f8bd3f1b8e5.png)</p>
+<p>注意：命令中一定要有<code>--keep-going</code> 不然会有错误导致无法进行分析。<br>另外需要在xcodebuild命令中添加<code>OTHER_CFLAGS=&quot;-DNS_FORMAT_ARGUMENT(A)= -D_Nullable_result=_Nullable&quot;</code>。<br>通过 <code>--no-liveness</code> 命令会让infer过滤掉<code>dead store</code>的错误，就是这些错误<br><img src="/images/35312306-c4c843fe-00f5-11e8-94f7-6f8bd3f1b8e5.png" alt="4908b1c0020d110b8427b6917127a087"></p>
 </blockquote>
 </li>
 </ul>
@@ -149,7 +149,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/03/mac%20Sonarqube%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3/" data-id="cla0qxu6p0000do5sagwr2hxy" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/11/03/mac%20Sonarqube%E6%90%AD%E5%BB%BA%E6%96%87%E6%A1%A3/" data-id="cla0r1gwv0000gj5s9krv2r61" data-title="" class="article-share-link">Share</a>
       
       
       
